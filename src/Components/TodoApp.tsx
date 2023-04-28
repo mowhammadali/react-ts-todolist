@@ -39,7 +39,7 @@ const TodoApp: React.FC = () => {
         const newItems = todos.filter(todo => todo.id !== id);
         setTodos([...newItems]);
     }
-    
+
     // keyDown Handler
     const keyDonwHandler = (event: React.KeyboardEvent <HTMLInputElement>) => {
         if (event.key === 'Enter' && todoText) {
@@ -48,7 +48,7 @@ const TodoApp: React.FC = () => {
         }
     }
 
-     return (
+    return (
         <div id = {styles.todoAppContainer}>
             <Inputs data = {{todoText , todoTextHandler , addTodoHandler , keyDonwHandler}}/>
             <Todos data = {{todos , deleteTodoHandler}}/>
