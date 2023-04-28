@@ -1,0 +1,34 @@
+.inputsContainer {
+    position: relative;
+    width: 100%;
+    height: 4.5rem;
+    border: 1px solid var(--main-text);
+}
+
+.textTodo {
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+    border: none;
+    outline: none;
+    color: var(--main-text);
+}
+
+.textTodo::placeholder {
+    font-weight: 500;
+    color: var(--main-text);
+}
+
+.addTodo {
+    position: absolute;
+    top: 0.4rem;
+    right: 0.6rem;
+    height: 100%;
+    font-size: 2.6rem;
+    border: none;
+    cursor: pointer;
+    color: var(--main-text);
+    background-color: transparent;
+}
